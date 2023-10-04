@@ -1,0 +1,25 @@
+
+let jogador = "Felipão"
+let vitoria = 200
+let derrota = 99
+let nivel = []
+let saldoVitoria = vitoria - derrota
+
+if (saldoVitoria <= 10) {
+    nivel = "Ferro";
+} else if (saldoVitoria  >= 11 && saldoVitoria <= 20) {
+ nivel = "Bronze";
+}else if (saldoVitoria  >= 21 && saldoVitoria  <= 50) {
+ nivel = "Prata";
+}else if (saldoVitoria  >= 51 && saldoVitoria  <= 80) {       
+ nivel = "Ouro";
+} else if (saldoVitoria  >= 81 && saldoVitoria  <= 90) { 
+ nivel = "Diamante";
+} else if (saldoVitoria  >= 91 && saldoVitoria <= 100) {
+ nivel = "Lendário";
+} else {
+ nivel = "Imortal";
+}
+
+mensagem = "O Herói " + jogador + " tem um saldo de " + saldoVitoria + " e está no nível " + nivel
+console.log(mensagem)
